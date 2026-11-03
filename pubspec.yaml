@@ -1,0 +1,25 @@
+name: secret_chat
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # الحزم التي نحتاجها لتطبيق المحادثة:
+  socket_io_client: ^2.0.3   # للاتصال بالسيرفر عبر الـ WebSockets
+  uuid: ^4.2.1               # لتوليد معرفات UUID مجهولة للمستخدمين
+  shared_preferences: ^2.2.2  # لحفظ الـ UUID محلياً في الهاتف
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
